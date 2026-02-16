@@ -200,7 +200,7 @@ export function Hero() {
             </Container>
 
             {/* Pinkish Glide Decoration (Figma Match) - RESTORED */}
-            <div className="absolute top-[950px] left-1/2 -translate-x-1/2 w-[1446px] h-[616px] -z-0 pointer-events-none overflow-hidden hidden md:block">
+            <div className="absolute top-[950px] left-1/2 -translate-x-1/2 w-[1446px] h-[616px] z-[5] pointer-events-none overflow-hidden hidden md:block">
                 {/* Main Gradient Shape (Rectangle 59 / Subtract) */}
                 <div
                     className="absolute inset-0"
@@ -211,12 +211,12 @@ export function Hero() {
 
                 {/* Top Scoop (Ellipse 16) - Cuts into the gradient to create the swoop */}
                 <div
-                    className="absolute w-[1732.9px] h-[516.18px] left-[-147.02px] top-[-258.1px] bg-black rounded-[100%]"
+                    className="absolute w-[1732.9px] h-[516.18px] left-[-147.02px] top-[-258.1px] bg-[#050505] rounded-[100%]"
                 />
 
                 {/* Bottom Scoop (Ellipse 17) - Defines the bottom curve */}
                 <div
-                    className="absolute w-[1732.9px] h-[516.18px] left-[-147.02px] top-[503.5px] bg-black rounded-[100%]"
+                    className="absolute w-[1732.9px] h-[516.18px] left-[-147.02px] top-[503.5px] bg-[#050505] rounded-[100%]"
                 />
             </div>
 
