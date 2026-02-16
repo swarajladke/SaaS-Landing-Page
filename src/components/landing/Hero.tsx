@@ -147,7 +147,7 @@ export function Hero() {
             </Container>
 
             {/* Pinkish Glide Decoration (Figma Match) - RESTORED */}
-            <div className="absolute top-[850px] left-1/2 -translate-x-1/2 w-[1446px] h-[616px] -z-0 pointer-events-none overflow-hidden hidden md:block">
+            <div className="absolute top-[900px] left-1/2 -translate-x-1/2 w-[1446px] h-[616px] -z-0 pointer-events-none overflow-hidden hidden md:block">
                 {/* Main Gradient Shape (Rectangle 59 / Subtract) */}
                 <div
                     className="absolute inset-0"
