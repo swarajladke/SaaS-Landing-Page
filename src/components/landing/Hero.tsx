@@ -68,7 +68,7 @@ export function Hero() {
             />
 
             <Container className="relative z-10">
-                <div className="text-center max-w-5xl mx-auto">
+                <div className="text-center max-w-6xl mx-auto">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
