@@ -35,15 +35,16 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
     const login = async (email: string, password: string) => {
         setIsLoading(true);
-        // Fake auth logic - simulate API delay
-        await new Promise((resolve) => setTimeout(resolve, 1000));
+        // Fake auth logic - simulate snappier API delay
+        await new Promise((resolve) => setTimeout(resolve, 300));
 
-        // Check for "admin@example.com" / "password" or any non-empty password
+        // Check for any non-empty password (at least 6 chars for safety)
         if (password.length >= 6) {
             const mockUser = { id: "1", email, name: email.split("@")[0] };
             localStorage.setItem("auth_token", "fake-jwt-token");
             localStorage.setItem("auth_user", JSON.stringify(mockUser));
             setUser(mockUser);
+            setIsLoading(false); // CRITICAL: Stop loading before redirect
             router.push("/dashboard");
         } else {
             setIsLoading(false);
