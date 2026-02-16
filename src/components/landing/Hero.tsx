@@ -68,14 +68,14 @@ export function Hero() {
             />
 
             <Container className="relative z-10">
-                <div className="text-center max-w-4xl mx-auto">
+                <div className="text-center max-w-5xl mx-auto">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
                     >
                         <h1 className="text-6xl md:text-8xl font-extrabold mb-10 tracking-tight text-white leading-[1.05]">
-                            Beautiful Landing Page <br />
+                            Beautiful Landing Page <br className="hidden md:block" />
                             Design for You
                         </h1>
                         <p className="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto mb-14 leading-relaxed font-medium">
