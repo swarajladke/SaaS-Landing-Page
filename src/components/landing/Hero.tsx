@@ -6,64 +6,64 @@ import { Container } from "@/components/layout/Container";
 
 export function Hero() {
     return (
-        <section className="relative pt-44 pb-0 overflow-hidden bg-black pb-44">
+        <section className="relative pt-44 pb-44 overflow-hidden bg-black">
             {/* Background Pattern: Vertical Lines */}
-            <div className="absolute inset-0 z-0 pointer-events-none bg-grid-lines opacity-20" />
+            <div className="absolute inset-0 z-0 pointer-events-none bg-grid-lines opacity-100" />
 
             {/* Background Orbs (Figma Match) */}
             {/* Ellipse 14 (Top Left) */}
             <div
-                className="absolute z-0 pointer-events-none"
+                className="absolute z-0 pointer-events-none rounded-full"
                 style={{
-                    width: '130px',
-                    height: '130px',
+                    width: '135px',
+                    height: '135px',
                     left: '122px',
                     top: '400px',
                     background: 'radial-gradient(1202.04% 1056.38% at 42.92% -7.08%, #494955 0%, #141414 100%)',
-                    filter: 'blur(15px)',
-                    opacity: 0.6
+                    filter: 'blur(40px)',
+                    opacity: 0.8
                 }}
             />
 
             {/* Ellipse 13 (Top Right) */}
             <div
-                className="absolute z-0 pointer-events-none"
+                className="absolute z-0 pointer-events-none rounded-full"
                 style={{
-                    width: '180px',
-                    height: '180px',
+                    width: '200px',
+                    height: '200px',
                     right: '150px',
                     top: '250px',
                     background: 'radial-gradient(1202.04% 1056.38% at 42.92% -7.08%, #494955 0%, #141414 100%)',
-                    filter: 'blur(30px)',
-                    opacity: 0.4
+                    filter: 'blur(60px)',
+                    opacity: 0.6
                 }}
             />
 
             {/* Ellipse 3 (Center Area) */}
             <div
-                className="absolute z-0 pointer-events-none"
+                className="absolute z-0 pointer-events-none rounded-full"
                 style={{
-                    width: '240px',
-                    height: '240px',
+                    width: '280px',
+                    height: '280px',
                     left: '20%',
                     top: '600px',
                     background: 'radial-gradient(1202.04% 1056.38% at 42.92% -7.08%, #494955 0%, #141414 100%)',
-                    filter: 'blur(40px)',
-                    opacity: 0.3
+                    filter: 'blur(80px)',
+                    opacity: 0.4
                 }}
             />
 
             {/* Additional Orb (Far Right) */}
             <div
-                className="absolute z-0 pointer-events-none"
+                className="absolute z-0 pointer-events-none rounded-full"
                 style={{
-                    width: '200px',
-                    height: '200px',
+                    width: '220px',
+                    height: '220px',
                     right: '10%',
                     top: '700px',
                     background: 'radial-gradient(1202.04% 1056.38% at 42.92% -7.08%, #494955 0%, #141414 100%)',
-                    filter: 'blur(35px)',
-                    opacity: 0.4
+                    filter: 'blur(60px)',
+                    opacity: 0.5
                 }}
             />
 
