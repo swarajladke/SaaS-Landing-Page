@@ -10,9 +10,62 @@ export function Hero() {
             {/* Background Pattern: Vertical Lines */}
             <div className="absolute inset-0 z-0 pointer-events-none bg-grid-lines opacity-20" />
 
-            {/* Ambient Globs */}
-            <div className="absolute top-0 right-[10%] w-[400px] h-[400px] bg-primary/10 blur-[150px] rounded-full -z-10" />
-            <div className="absolute top-1/4 left-[-10%] w-[500px] h-[500px] bg-pink-500/5 blur-[150px] rounded-full -z-10" />
+            {/* Background Orbs (Figma Match) */}
+            {/* Ellipse 14 (Top Left) */}
+            <div
+                className="absolute z-0 pointer-events-none"
+                style={{
+                    width: '130px',
+                    height: '130px',
+                    left: '122px',
+                    top: '400px',
+                    background: 'radial-gradient(1202.04% 1056.38% at 42.92% -7.08%, #494955 0%, #141414 100%)',
+                    filter: 'blur(15px)',
+                    opacity: 0.6
+                }}
+            />
+
+            {/* Ellipse 13 (Top Right) */}
+            <div
+                className="absolute z-0 pointer-events-none"
+                style={{
+                    width: '180px',
+                    height: '180px',
+                    right: '150px',
+                    top: '250px',
+                    background: 'radial-gradient(1202.04% 1056.38% at 42.92% -7.08%, #494955 0%, #141414 100%)',
+                    filter: 'blur(30px)',
+                    opacity: 0.4
+                }}
+            />
+
+            {/* Ellipse 3 (Center Area) */}
+            <div
+                className="absolute z-0 pointer-events-none"
+                style={{
+                    width: '240px',
+                    height: '240px',
+                    left: '20%',
+                    top: '600px',
+                    background: 'radial-gradient(1202.04% 1056.38% at 42.92% -7.08%, #494955 0%, #141414 100%)',
+                    filter: 'blur(40px)',
+                    opacity: 0.3
+                }}
+            />
+
+            {/* Additional Orb (Far Right) */}
+            <div
+                className="absolute z-0 pointer-events-none"
+                style={{
+                    width: '200px',
+                    height: '200px',
+                    right: '10%',
+                    top: '700px',
+                    background: 'radial-gradient(1202.04% 1056.38% at 42.92% -7.08%, #494955 0%, #141414 100%)',
+                    filter: 'blur(35px)',
+                    opacity: 0.4
+                }}
+            />
 
             <Container className="relative z-10">
                 <div className="text-center max-w-4xl mx-auto">
