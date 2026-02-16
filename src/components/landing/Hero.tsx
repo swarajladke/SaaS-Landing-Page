@@ -6,22 +6,22 @@ import { Container } from "@/components/layout/Container";
 
 export function Hero() {
     return (
-        <section className="relative pt-44 pb-44 overflow-hidden bg-black">
-            {/* Background Pattern: Vertical Lines */}
-            <div className="absolute inset-0 z-0 pointer-events-none bg-grid-lines opacity-100" />
+        <section className="relative pt-44 pb-44 overflow-hidden bg-[#050505]">
+            {/* Background Pattern: Vertical Lines (Ultra Subtle) */}
+            <div className="absolute inset-0 z-0 pointer-events-none bg-grid-lines opacity-30" />
 
             {/* Background Orbs (Figma Match) */}
             {/* Ellipse 14 (Top Left) */}
             <div
                 className="absolute z-0 pointer-events-none rounded-full"
                 style={{
-                    width: '135px',
-                    height: '135px',
-                    left: '122px',
-                    top: '400px',
+                    width: '140px',
+                    height: '140px',
+                    left: '120px',
+                    top: '420px',
                     background: 'radial-gradient(1202.04% 1056.38% at 42.92% -7.08%, #494955 0%, #141414 100%)',
-                    filter: 'blur(40px)',
-                    opacity: 0.8
+                    filter: 'blur(50px)',
+                    opacity: 0.5
                 }}
             />
 
@@ -29,13 +29,13 @@ export function Hero() {
             <div
                 className="absolute z-0 pointer-events-none rounded-full"
                 style={{
-                    width: '200px',
-                    height: '200px',
-                    right: '150px',
-                    top: '250px',
+                    width: '220px',
+                    height: '220px',
+                    right: '180px',
+                    top: '300px',
                     background: 'radial-gradient(1202.04% 1056.38% at 42.92% -7.08%, #494955 0%, #141414 100%)',
-                    filter: 'blur(60px)',
-                    opacity: 0.6
+                    filter: 'blur(80px)',
+                    opacity: 0.4
                 }}
             />
 
@@ -43,13 +43,13 @@ export function Hero() {
             <div
                 className="absolute z-0 pointer-events-none rounded-full"
                 style={{
-                    width: '280px',
-                    height: '280px',
-                    left: '20%',
-                    top: '600px',
+                    width: '320px',
+                    height: '320px',
+                    left: '15%',
+                    top: '650px',
                     background: 'radial-gradient(1202.04% 1056.38% at 42.92% -7.08%, #494955 0%, #141414 100%)',
-                    filter: 'blur(80px)',
-                    opacity: 0.4
+                    filter: 'blur(100px)',
+                    opacity: 0.3
                 }}
             />
 
@@ -57,13 +57,13 @@ export function Hero() {
             <div
                 className="absolute z-0 pointer-events-none rounded-full"
                 style={{
-                    width: '220px',
-                    height: '220px',
-                    right: '10%',
-                    top: '700px',
+                    width: '240px',
+                    height: '240px',
+                    right: '5%',
+                    top: '750px',
                     background: 'radial-gradient(1202.04% 1056.38% at 42.92% -7.08%, #494955 0%, #141414 100%)',
-                    filter: 'blur(60px)',
-                    opacity: 0.5
+                    filter: 'blur(70px)',
+                    opacity: 0.4
                 }}
             />
 
