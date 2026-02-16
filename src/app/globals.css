@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #000000;
+  --background: #050505;
   --foreground: #ffffff;
   --primary: #A855F7;
   /* Purple */
@@ -11,7 +11,7 @@
   --border: #1A1A1A;
 
   --gradient-primary: linear-gradient(135deg, #A855F7 0%, #EC4899 100%);
-  --gradient-bg: linear-gradient(180deg, #000000 0%, #050505 100%);
+  --gradient-bg: linear-gradient(180deg, #050505 0%, #000000 100%);
 }
 
 .glass-nav {
@@ -81,7 +81,7 @@
 }
 
 .bg-grid-lines {
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
   background-size: 80px 100%;
 }
 
