@@ -42,20 +42,6 @@ export function Hero() {
                         transition={{ duration: 1, delay: 0.2 }}
                         className="relative mx-auto max-w-6xl"
                     >
-                        {/* THE SWOOP (Background Decoration) */}
-                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[160%] h-[180%] -z-10 overflow-hidden pointer-events-none">
-                            <div
-                                className="absolute inset-0 rounded-[100%] blur-[2px]"
-                                style={{
-                                    background: 'linear-gradient(92.51deg, #FF9898 0.48%, #8054FF 100%)',
-                                    clipPath: 'ellipse(50% 30% at 50% 50%)',
-                                    opacity: 0.9
-                                }}
-                            />
-                            {/* Inner Cutout for Swoop Effect */}
-                            <div className="absolute inset-0 bg-black rounded-[100%] scale-[0.98] blur-[20px]" style={{ clipPath: 'ellipse(51% 25% at 50% 50%)' }} />
-                        </div>
-
                         {/* DASHBOARD MOCKUP */}
                         <div className="rounded-[3rem] border border-white/10 bg-[#0A0A0B] p-2 shadow-[0_0_100px_-20px_rgba(128,84,255,0.3)] overflow-hidden relative group">
                             <div className="aspect-[16/9.5] bg-[#050505] rounded-[2.8rem] flex p-10 gap-10">
@@ -159,6 +145,30 @@ export function Hero() {
                     </motion.div>
                 </div>
             </Container>
+
+            {/* Pinkish Glide Decoration (Figma Match) - RESTORED */}
+            <div className="absolute top-[635px] left-1/2 -translate-x-1/2 w-[1446px] h-[616px] -z-0 pointer-events-none overflow-hidden hidden md:block">
+                {/* Main Gradient Shape (Rectangle 59 / Subtract) */}
+                <div
+                    className="absolute inset-0"
+                    style={{
+                        background: 'linear-gradient(92.51deg, #FF9898 0.48%, #8054FF 100%)',
+                    }}
+                />
+
+                {/* Top Scoop (Ellipse 16) - Cuts into the gradient to create the swoop */}
+                <div
+                    className="absolute w-[1732.9px] h-[516.18px] left-[-147.02px] top-[-258.1px] bg-black rounded-[100%]"
+                />
+
+                {/* Bottom Scoop (Ellipse 17) - Defines the bottom curve */}
+                <div
+                    className="absolute w-[1732.9px] h-[516.18px] left-[-147.02px] top-[503.5px] bg-black rounded-[100%]"
+                />
+            </div>
+
+            {/* Mobile Fallback Decoration */}
+            <div className="md:hidden absolute bottom-[-50px] left-0 w-full h-[300px] bg-gradient-brand opacity-50 blur-[100px] -z-10" />
         </section>
     );
 }
