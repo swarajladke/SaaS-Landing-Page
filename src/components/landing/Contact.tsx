@@ -11,16 +11,12 @@ export function Contact() {
                 <div className="relative h-[400px] flex items-center justify-center">
                     <div className="absolute inset-0 border border-white/[0.03] rounded-full scale-125"></div>
                     <div className="absolute inset-0 border border-white/[0.05] rounded-full scale-110"></div>
-                    <div className="relative w-80 h-80 border border-white/10 rounded-full flex items-center justify-center overflow-hidden">
-                        {/* More detailed wireframe globe mapping Figma's style */}
-                        <svg width="320" height="320" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="0.2" strokeLinecap="round" strokeLinejoin="round" className="text-white/20 scale-150">
-                            <circle cx="12" cy="12" r="10" />
-                            <line x1="2" y1="12" x2="22" y2="12" />
-                            <line x1="12" y1="2" x2="12" y2="22" />
-                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-                            <path d="M2.5 9h19" />
-                            <path d="M2.5 15h19" />
-                        </svg>
+                    <div className="relative w-80 h-80 flex items-center justify-center overflow-hidden">
+                        <img
+                            src="/contact-globe.png"
+                            alt="Contact Globe"
+                            className="w-full h-full object-contain opacity-40 scale-110"
+                        />
                         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60"></div>
                     </div>
                 </div>
