@@ -38,7 +38,7 @@ export function Navbar() {
                         <Link href="/" className="text-sm font-medium text-slate-300 hover:text-white transition-colors">Home</Link>
                     </nav>
 
-                    <Link href="/login">
+                    <Link href="/signup">
                         <Button className="bg-gradient-primary border-none text-white px-6 py-2.5 rounded-xl text-sm font-semibold hover:opacity-90 transition-opacity">
                             Download Template
                         </Button>

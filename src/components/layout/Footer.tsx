@@ -31,28 +31,28 @@ export function Footer() {
                         <div>
                             <h4 className="font-bold mb-6 text-white text-sm">Sections</h4>
                             <ul className="space-y-4 text-sm text-slate-500">
-                                <li><Link href="#" className="hover:text-primary transition-colors">Home</Link></li>
-                                <li><Link href="#" className="hover:text-primary transition-colors">Section One</Link></li>
-                                <li><Link href="#" className="hover:text-primary transition-colors">Section Two</Link></li>
-                                <li><Link href="#" className="hover:text-primary transition-colors">Section Three</Link></li>
+                                <li><Link href="/" className="hover:text-primary transition-colors">Home</Link></li>
+                                <li><Link href="#features" className="hover:text-primary transition-colors">Features</Link></li>
+                                <li><Link href="#pricing" className="hover:text-primary transition-colors">Pricing</Link></li>
+                                <li><Link href="#testimonials" className="hover:text-primary transition-colors">Testimonials</Link></li>
                             </ul>
                         </div>
                         <div>
                             <h4 className="font-bold mb-6 text-white text-sm">&nbsp;</h4>
                             <ul className="space-y-4 text-sm text-slate-500">
-                                <li><Link href="#" className="hover:text-primary transition-colors">Home</Link></li>
-                                <li><Link href="#" className="hover:text-primary transition-colors">Section One</Link></li>
-                                <li><Link href="#" className="hover:text-primary transition-colors">Section Two</Link></li>
-                                <li><Link href="#" className="hover:text-primary transition-colors">Section Three</Link></li>
+                                <li><Link href="/login" className="hover:text-primary transition-colors">Login</Link></li>
+                                <li><Link href="/signup" className="hover:text-primary transition-colors">Sign Up</Link></li>
+                                <li><Link href="/dashboard" className="hover:text-primary transition-colors">Dashboard</Link></li>
+                                <li><Link href="#faq" className="hover:text-primary transition-colors">FAQ</Link></li>
                             </ul>
                         </div>
                         <div>
-                            <h4 className="font-bold mb-6 text-white text-sm">&nbsp;</h4>
+                            <h4 className="font-bold mb-6 text-white text-sm">Resources</h4>
                             <ul className="space-y-4 text-sm text-slate-500">
-                                <li><Link href="#" className="hover:text-primary transition-colors">Home</Link></li>
-                                <li><Link href="#" className="hover:text-primary transition-colors">Section One</Link></li>
-                                <li><Link href="#" className="hover:text-primary transition-colors">Section Two</Link></li>
-                                <li><Link href="#" className="hover:text-primary transition-colors">Section Three</Link></li>
+                                <li><Link href="/support" className="hover:text-primary transition-colors">Support</Link></li>
+                                <li><Link href="/terms" className="hover:text-primary transition-colors">Terms of Service</Link></li>
+                                <li><Link href="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link></li>
+                                <li><Link href="/api-docs" className="hover:text-primary transition-colors">API Reference</Link></li>
                             </ul>
                         </div>
                     </div>

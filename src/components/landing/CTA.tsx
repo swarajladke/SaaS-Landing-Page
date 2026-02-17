@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { Container } from "@/components/layout/Container";
 import { Button } from "@/components/ui/Button";
 
@@ -29,9 +30,11 @@ export function CTA() {
                             Feel Free to Join our <br />
                             15 Days Free Trial
                         </h2>
-                        <Button className="inline-block px-10 py-5 bg-black text-white font-bold rounded-xl hover:bg-black/80 transition-all shadow-xl h-auto border-none uppercase tracking-widest text-xs">
-                            Download Template
-                        </Button>
+                        <Link href="/signup">
+                            <Button className="inline-block px-10 py-5 bg-black text-white font-bold rounded-xl hover:bg-black/80 transition-all shadow-xl h-auto border-none uppercase tracking-widest text-xs">
+                                Download Template
+                            </Button>
+                        </Link>
                     </div>
                 </motion.div>
             </Container>

@@ -4,6 +4,7 @@ import { Check } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/layout/Container";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const plans = [
     {
@@ -55,8 +56,8 @@ export function Pricing() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
                             className={`relative flex flex-col p-8 rounded-2xl border ${plan.popular
-                                    ? "border-primary shadow-xl ring-1 ring-primary"
-                                    : "border-border bg-background"
+                                ? "border-primary shadow-xl ring-1 ring-primary"
+                                : "border-border bg-background"
                                 }`}
                         >
                             {plan.popular && (
@@ -83,12 +84,14 @@ export function Pricing() {
                                 ))}
                             </ul>
 
-                            <Button
-                                variant={plan.popular ? "primary" : "outline"}
-                                className="w-full"
-                            >
-                                {plan.buttonText}
-                            </Button>
+                            <Link href="/signup">
+                                <Button
+                                    variant={plan.popular ? "primary" : "outline"}
+                                    className="w-full"
+                                >
+                                    {plan.buttonText}
+                                </Button>
+                            </Link>
                         </motion.div>
                     ))}
                 </div>

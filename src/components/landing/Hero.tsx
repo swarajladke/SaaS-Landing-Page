@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/layout/Container";
 
@@ -103,9 +104,11 @@ export function Hero() {
                             functional. It should be able to solve the problem
                         </p>
                         <div className="flex justify-center mb-32">
-                            <Button className="bg-gradient-primary border-none text-white px-12 py-7 text-xs uppercase tracking-[0.2em] font-bold rounded-2xl shadow-xl shadow-primary/20 hover:scale-105 active:scale-95 transition-all h-auto">
-                                Download Template
-                            </Button>
+                            <Link href="/signup">
+                                <Button className="bg-gradient-primary border-none text-white px-12 py-7 text-xs uppercase tracking-[0.2em] font-bold rounded-2xl shadow-xl shadow-primary/20 hover:scale-105 active:scale-95 transition-all h-auto">
+                                    Download Template
+                                </Button>
+                            </Link>
                         </div>
                     </motion.div>
 

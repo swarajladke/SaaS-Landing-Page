@@ -32,14 +32,17 @@ export function FAQ() {
                     {faqs.map((faq, idx) => (
                         <div
                             key={idx}
-                            onClick={() => setOpenIndex(idx)}
+                            onClick={() => setOpenIndex(openIndex === idx ? null : idx)}
                             className={`rounded-[2rem] border border-white/5 p-8 cursor-pointer transition-all duration-300 ${openIndex === idx ? 'bg-white/5 border-white/10' : 'bg-transparent hover:border-white/10'}`}
                         >
                             <div className="flex justify-between items-center bg-transparent">
                                 <h3 className="text-white font-bold text-lg">{faq.question}</h3>
-                                <div className="w-6 h-6 flex items-center justify-center opacity-40">
-                                    <Plus className="w-5 h-5 text-white" />
-                                </div>
+                                <motion.div
+                                    animate={{ rotate: openIndex === idx ? 180 : 0 }}
+                                    className="w-6 h-6 flex items-center justify-center opacity-40"
+                                >
+                                    {openIndex === idx ? <Minus className="w-5 h-5 text-white" /> : <Plus className="w-5 h-5 text-white" />}
+                                </motion.div>
                             </div>
                             {openIndex === idx && (
                                 <div className="mt-8 pt-8 border-t border-white/5">

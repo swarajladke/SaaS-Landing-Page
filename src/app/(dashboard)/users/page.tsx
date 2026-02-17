@@ -106,7 +106,10 @@ export default function UsersPage() {
                     <h1 className="text-3xl font-bold text-foreground">User Management</h1>
                     <p className="text-muted mt-1">Manage and monitor all platform users in one place.</p>
                 </div>
-                <Button className="shrink-0">
+                <Button
+                    className="shrink-0"
+                    onClick={() => alert("Add User functionality would go here! Modal or form can be implemented.")}
+                >
                     Add New User
                 </Button>
             </div>
