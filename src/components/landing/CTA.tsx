@@ -18,7 +18,7 @@ export function CTA() {
                         <img
                             src="/world-map.png"
                             alt="World Map Graphic"
-                            className="w-full h-full object-contain object-center scale-[1.5]"
+                            className="w-full h-full object-contain object-center scale-[0.9]"
                         />
                     </div>
 
