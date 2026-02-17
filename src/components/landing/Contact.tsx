@@ -15,7 +15,7 @@ export function Contact() {
                         <img
                             src="/contact-globe.png"
                             alt="Contact Globe"
-                            className="w-full h-full object-contain opacity-40 scale-[1.3]"
+                            className="w-full h-full object-contain opacity-40 scale-[1.6]"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60"></div>
                     </div>
