@@ -10,9 +10,14 @@ export function Navbar() {
         <motion.header
             initial={{ y: -100 }}
             animate={{ y: 0 }}
-            className="fixed top-0 z-50 w-full glass-nav px-6"
+            className="fixed top-0 z-50 w-full bg-[#050505]/80 backdrop-blur-xl border-b border-white/5 px-6 overflow-hidden"
         >
-            <div className="max-w-7xl mx-auto h-20 flex items-center justify-between">
+            {/* Hero-like Grid Layer */}
+            <div className="absolute inset-0 z-0 pointer-events-none bg-grid-lines opacity-70" />
+
+            {/* Subtle Gradient to blend with Hero top */}
+            <div className="absolute inset-0 z-0 bg-gradient-to-r from-primary/5 via-transparent to-secondary/5 opacity-50" />
+            <div className="relative z-10 max-w-7xl mx-auto h-20 flex items-center justify-between">
                 <div className="flex items-center gap-2 group cursor-pointer">
                     <Link href="/" className="flex items-center gap-2">
                         <div className="w-8 h-8 bg-gradient-brand rounded-lg flex items-center justify-center bg-gradient-primary">
