@@ -15,18 +15,18 @@ export function CTA() {
                     viewport={{ once: true }}
                     className="relative rounded-[2.5rem] overflow-hidden p-12 md:p-24 bg-gradient-brand text-white bg-gradient-to-r from-[#FFB295] via-[#EC4899] to-[#7000FF]"
                 >
-                    <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden opacity-30 select-none translate-x-[15%]">
-                        <div className="relative w-full h-full max-w-[600px] ml-auto">
+                    <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden opacity-50 select-none translate-x-[25%]">
+                        <div className="relative w-full h-full max-w-[800px] ml-auto">
                             {WORLD_MAP_VECTORS.map((v, i) => (
                                 <div
                                     key={i}
-                                    className="absolute bg-white"
+                                    className="absolute bg-[#231F20]"
                                     style={{
                                         left: `${v.l}%`,
                                         right: `${v.r}%`,
                                         top: `${v.t}%`,
                                         bottom: `${v.b}%`,
-                                        boxShadow: '0 0 2px rgba(255,255,255,0.3)'
+                                        height: '1.5px', // Refined line thickness
                                     }}
                                 />
                             ))}
