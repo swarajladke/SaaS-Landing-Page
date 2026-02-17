@@ -22,6 +22,12 @@ export function CTA() {
                         />
                     </div>
 
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center z-0 opacity-[0.08] select-none pointer-events-none whitespace-nowrap">
+                        <span className="text-[120px] font-black text-white uppercase tracking-tighter">
+                            Beautiful Landing Page for You
+                        </span>
+                    </div>
+
                     <div className="relative z-10 max-w-xl">
                         <p className="text-white/80 font-semibold mb-4 uppercase tracking-wider text-sm">Love our Our Tool?</p>
                         <h2 className="text-4xl md:text-6xl font-extrabold mb-10 leading-[1.1] tracking-tight">
