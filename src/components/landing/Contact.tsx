@@ -11,13 +11,13 @@ export function Contact() {
                 <div className="relative h-[400px] flex items-center justify-center">
                     <div className="absolute inset-0 border border-white/[0.03] rounded-full scale-125"></div>
                     <div className="absolute inset-0 border border-white/[0.05] rounded-full scale-110"></div>
-                    <div className="relative w-80 h-80 flex items-center justify-center overflow-hidden">
+                    <div className="relative w-[450px] h-[450px] flex items-center justify-center">
                         <img
                             src="/contact-globe.png"
                             alt="Contact Globe"
-                            className="w-full h-full object-contain opacity-40 scale-[1.6]"
+                            className="w-full h-full object-contain opacity-80 scale-[1.2]"
+                            style={{ filter: "invert(1) brightness(1.5)" }}
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60"></div>
                     </div>
                 </div>
 
