@@ -10,7 +10,7 @@ export function Navbar() {
         <motion.header
             initial={{ y: -100 }}
             animate={{ y: 0 }}
-            className="fixed top-0 z-50 w-full bg-[#050505]/80 backdrop-blur-xl border-b border-white/5 px-6 overflow-hidden"
+            className="fixed top-0 z-50 w-full bg-[#050505]/80 backdrop-blur-xl px-6 overflow-hidden"
         >
             {/* Hero-like Grid Layer */}
             <div className="absolute inset-0 z-0 pointer-events-none bg-grid-lines opacity-70" />
