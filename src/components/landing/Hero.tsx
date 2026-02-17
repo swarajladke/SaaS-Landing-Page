@@ -73,7 +73,27 @@ export function Hero() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
+                        className="relative"
                     >
+                        {/* Centered Decorative Orb Above Heading */}
+                        <motion.div
+                            className="absolute left-1/2 -translate-x-1/2 -top-40 z-0 pointer-events-none rounded-full w-[400px] h-[400px]"
+                            animate={{
+                                y: [-10, 10, -10],
+                                scale: [1, 1.05, 1],
+                                opacity: [0.15, 0.25, 0.15]
+                            }}
+                            transition={{
+                                duration: 8,
+                                repeat: Infinity,
+                                ease: "easeInOut"
+                            }}
+                            style={{
+                                background: 'radial-gradient(50% 50% at 50% 50%, #8054FF 0%, rgba(128, 84, 255, 0) 100%)',
+                                filter: 'blur(80px)',
+                            }}
+                        />
+
                         <h1 className="text-6xl md:text-8xl font-extrabold mb-10 tracking-tight text-white leading-[1.05]">
                             Beautiful Landing Page <br className="hidden md:block" />
                             Design for You
