@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Container } from "@/components/layout/Container";
 import { Button } from "@/components/ui/Button";
+import { WORLD_MAP_VECTORS } from "./WorldMapData";
 
 export function CTA() {
     return (
@@ -14,12 +15,22 @@ export function CTA() {
                     viewport={{ once: true }}
                     className="relative rounded-[2.5rem] overflow-hidden p-12 md:p-24 bg-gradient-brand text-white bg-gradient-to-r from-[#FFB295] via-[#EC4899] to-[#7000FF]"
                 >
-                    <div className="absolute right-0 top-0 h-full w-full md:w-1/2 opacity-20 pointer-events-none">
-                        <img
-                            alt="Abstract world map background pattern"
-                            className="w-full h-full object-contain object-right scale-110 translate-x-10"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbSTTaRzVAZBDj6UYvR1d98Lxr55QO8OOdWMCtw61M_zSkDvna0H1Oj6oQValQQnTQjXTsDBesEXVa7hj_zCpyqDMhN1rBhQAwshNCJ243gxDeBz1am-OpOsLbacn-tnHN3KqPCUhAkTFYRdM7tWGEPQYGE6W0l9MZKwb2MUSIoAf_OxywWhmDnm-n7YRqnyt4hqm-S3CmNi8S0uoSgSJ8OHKhQQs7rrhkUBZuSbIxcKndTddeHzgtgI_somPpkOyPkVjbJ-AF3qUu"
-                        />
+                    <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden opacity-30 select-none translate-x-[15%]">
+                        <div className="relative w-full h-full max-w-[600px] ml-auto">
+                            {WORLD_MAP_VECTORS.map((v, i) => (
+                                <div
+                                    key={i}
+                                    className="absolute bg-white"
+                                    style={{
+                                        left: `${v.l}%`,
+                                        right: `${v.r}%`,
+                                        top: `${v.t}%`,
+                                        bottom: `${v.b}%`,
+                                        boxShadow: '0 0 2px rgba(255,255,255,0.3)'
+                                    }}
+                                />
+                            ))}
+                        </div>
                     </div>
 
                     <div className="relative z-10 max-w-xl">
