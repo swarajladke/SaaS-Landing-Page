@@ -14,11 +14,11 @@ export function CTA() {
                     viewport={{ once: true }}
                     className="relative rounded-[2.5rem] overflow-hidden p-12 md:p-24 bg-gradient-brand text-white bg-gradient-to-r from-[#FFB295] via-[#EC4899] to-[#7000FF]"
                 >
-                    <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden opacity-50 select-none translate-x-[20%]">
+                    <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden opacity-50 select-none translate-x-[45%]">
                         <img
                             src="/world-map.png"
                             alt="World Map Graphic"
-                            className="w-full h-full object-contain object-right scale-125"
+                            className="w-full h-full object-contain object-right scale-[1.8]"
                         />
                     </div>
 
