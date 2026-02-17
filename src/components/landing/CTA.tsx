@@ -15,22 +15,13 @@ export function CTA() {
                     viewport={{ once: true }}
                     className="relative rounded-[2.5rem] overflow-hidden p-12 md:p-24 bg-gradient-brand text-white bg-gradient-to-r from-[#FFB295] via-[#EC4899] to-[#7000FF]"
                 >
-                    <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden opacity-40 select-none translate-x-[15%]">
-                        <div className="relative w-full h-full max-w-[900px] ml-auto">
-                            {WORLD_MAP_VECTORS.map((v, i) => (
-                                <div
-                                    key={i}
-                                    className="absolute bg-[#231F20]"
-                                    style={{
-                                        left: `${v.l}%`,
-                                        right: `${v.r}%`,
-                                        top: `${v.t}%`,
-                                        bottom: `${v.b}%`,
-                                        height: '2.5px', // Enhanced thickness for "etched" look
-                                    }}
-                                />
-                            ))}
-                        </div>
+                    <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden opacity-20 select-none translate-x-[15%]">
+                        <img
+                            src="/world-map.png"
+                            alt="World Map Graphic"
+                            className="w-full h-full object-contain object-right scale-125 translate-x-10 mix-blend-multiply"
+                            style={{ filter: "brightness(0) saturate(100%) invert(10%) sepia(5%) saturate(717%) hue-rotate(314deg) brightness(96%) contrast(89%)" }} // Approximating #231F20
+                        />
                     </div>
 
                     <div className="relative z-10 max-w-xl">
