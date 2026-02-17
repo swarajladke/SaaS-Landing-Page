@@ -60,15 +60,15 @@ export function Footer() {
 
                 <div className="pt-10 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-6">
                     <p className="text-sm text-slate-600">All Rights Reserved Inkyy.com 2024</p>
-                    <div className="flex gap-4">
-                        <Link href="#" className="w-[104px] h-[104px] bg-[#222228] rounded-[30px] flex items-center justify-center text-white hover:bg-[#2a2a32] transition-colors shadow-2xl">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><line x1="2" y1="12" x2="22" y2="12" /><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" /></svg>
+                    <div className="flex gap-3">
+                        <Link href="#" className="w-14 h-14 bg-[#222228] rounded-2xl flex items-center justify-center text-white hover:bg-[#2a2a32] transition-colors shadow-xl">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><line x1="2" y1="12" x2="22" y2="12" /><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" /></svg>
                         </Link>
-                        <Link href="#" className="w-[104px] h-[104px] bg-[#222228] rounded-[30px] flex items-center justify-center text-white hover:bg-[#2a2a32] transition-colors shadow-2xl">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><polyline points="22,6 12,13 2,6" /></svg>
+                        <Link href="#" className="w-14 h-14 bg-[#222228] rounded-2xl flex items-center justify-center text-white hover:bg-[#2a2a32] transition-colors shadow-xl">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><polyline points="22,6 12,13 2,6" /></svg>
                         </Link>
-                        <Link href="#" className="w-[104px] h-[104px] bg-[#222228] rounded-[30px] flex items-center justify-center text-white hover:bg-[#2a2a32] transition-colors shadow-2xl">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" /><polyline points="16 6 12 2 8 6" /><line x1="12" y1="2" x2="12" y2="15" /></svg>
+                        <Link href="#" className="w-14 h-14 bg-[#222228] rounded-2xl flex items-center justify-center text-white hover:bg-[#2a2a32] transition-colors shadow-xl">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" /><polyline points="16 6 12 2 8 6" /><line x1="12" y1="2" x2="12" y2="15" /></svg>
                         </Link>
                     </div>
                 </div>
