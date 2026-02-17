@@ -14,7 +14,7 @@ export function CTA() {
                     viewport={{ once: true }}
                     className="relative rounded-[2.5rem] overflow-hidden p-12 md:p-24 bg-gradient-brand text-white bg-gradient-to-r from-[#FFB295] via-[#EC4899] to-[#7000FF]"
                 >
-                    <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden opacity-50 select-none translate-x-[25%]">
+                    <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden opacity-50 select-none translate-x-[10%]">
                         <img
                             src="/world-map.png"
                             alt="World Map Graphic"
@@ -22,7 +22,7 @@ export function CTA() {
                         />
                     </div>
 
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center z-0 opacity-[0.04] select-none pointer-events-none whitespace-nowrap">
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center z-0 opacity-[0.07] select-none pointer-events-none whitespace-nowrap">
                         <span className="text-[120px] font-black text-white uppercase tracking-tighter">
                             Beautiful Landing Page for You
                         </span>
